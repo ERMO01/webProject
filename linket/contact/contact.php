@@ -10,12 +10,12 @@
     <header>
         <div class="main">
             <div class="logo">
-                <img src="../loginRegister/logo1.PNG">
+                <img src="../../logo.png">
                 <div class="links">
                     <ul>
                         <li class="active"><a > Contact</a></li>    
-                        <li> <a href="../loginRegister/loginRegister.html">Register</a></li>
-                        <li><a href="../../index.html">Home</a></li>
+                        <li> <a href="../loginRegister/loginRegister.php">Register</a></li>
+                        <li><a href="../../index.php">Home</a></li>
                         
                     </ul>
                 </div>  

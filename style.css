@@ -227,11 +227,14 @@ ul li.active a{
     ul{
         float: left;
         display: flex;
+        flex-direction: column;
         padding: 10px; 
     }
     ul li{ 
         padding: 10px;
         font-size: 15px;
+        color: white;
+        margin-left: 0%;
     }
     ul li a:hover{
         background-color: black;
@@ -294,14 +297,21 @@ ul li.active a{
       width: 150px;
       margin-left: 30%;
   }
+  
+  
   ul{
-      float: left;
-      display: flex;
-      padding: 10px; 
-  }
+        float: left;
+        display: flex;
+        flex-direction: column;
+        padding: 10px; 
+        margin-left: 35%;
+    }
   ul li{ 
       padding: 10px;
       font-size: 15px;
+  }
+  ul li a{
+      color: white;
   }
   .ctg{
       top:45%;

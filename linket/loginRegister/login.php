@@ -16,18 +16,18 @@
             <div class="links">
                 <ul>
                     <li class="active"><a>Login</a></li>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li ><a href="../contact/contact.html"> Contact</a></li>
+                    <li><a href="../../index.php">Home</a></li>
+                    <li ><a href="../contact/contact.php"> Contact</a></li>
                 </ul>
             </div>     
             <div class="login-page">
                 <div class="form">
-                    <form class="register-form">
+                    <form class="register-form" method="post" action="login.php">
                         <h2 style="font-family: Arial, Helvetica, sans-serif; color: grey;">Insert your info!</h2>
-                        <input id="username" type="text" placeholder="user name">
-                        <input id="password" type="password" placeholder="password">
-                        <button onclick="validation()">Submit</button>
-                        <p class="message">Not registered? <a href="loginRegister.html">Register</a></p>
+                        <input id="username" name="user_name" type="text" placeholder="user name">
+                        <input id="password" name="password" type="password" placeholder="password">
+                        <button name="login" onclick="validation()">Submit</button>
+                        <p class="message">Not registered? <a href="loginRegister.php">Register</a></p>
                     </form>
                 </div>
             </div>
