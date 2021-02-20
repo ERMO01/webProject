@@ -1,4 +1,3 @@
-<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,7 +23,6 @@
             <div class="login-page">
                 <div class="form">
                     <form class="register-form" method="post" action="login.php">
-                    <?php include('errors.php'); ?>
                         <h2 style="font-family: Arial, Helvetica, sans-serif; color: grey;">Insert your info!</h2>
                         <input id="username" name="user_name" type="text" placeholder="user name">
                         <input id="password" name="password" type="password" placeholder="password">

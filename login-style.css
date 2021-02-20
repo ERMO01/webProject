@@ -84,25 +84,3 @@ ul li.active a{
 .form button:hover, .form button:active{
     background: grey;
 }
-@media only screen and (max-width: 768px){
-    ul {
-        display: flex;
-    }
-    .login-page{
-        padding-top: 15%;
-    }
-    
-}
-@media only screen and (max-width: 500px){
-    .logo img{
-        padding-left: 45%;
-    }
-    ul{
-        float: left;
-        margin-left: 38%;
-    }
-    .login-page{
-        padding-top: 50%;
-    }
-    
-}

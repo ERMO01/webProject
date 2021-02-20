@@ -19,7 +19,7 @@
                         
                     </ul>
                 </div>  
-                <form class="register-form">
+                <form class="register-form ">
                 <div class="login-page">
                     <div class="form" >
 
@@ -33,5 +33,6 @@
                         </form>
                 </div>
     </header>
+
     </body>
 </html>

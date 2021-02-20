@@ -86,33 +86,3 @@ ul li.active a{
     height: 149px;
     resize:none;
 }
-
-
-
-@media only screen and (max-width:768px){
-    .logo img{
-        padding-left: 33%;
-    }
-    .login-page{
-        padding-top: 40%;
-        padding-right: 30%;
-    }
-    ul {
-        list-style-type: none;
-        margin-top: 25px;
-        padding-right: 38%;
-    }
-}
-@media only screen and (max-width: 501px){
-    .login-page{
-        padding-top: 250px;
-    }
-    ul {
-        padding-top: 55px;
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        float: left;
-        margin-left: 29%;
-    }
-}

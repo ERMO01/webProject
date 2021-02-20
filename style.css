@@ -50,90 +50,54 @@ ul li.active a{
     color: wheat;
     font-family: sans-serif;
 }
-.row {
-    
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    width: 50%;
-    position: relative;
-    left: 22.5%;
-}
-.box-container {
-    display: flex;
-    flex: wrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.box-container img:hover {
-    transform: scale(1.1);
-}
-.box-container>h1 {
-    font-size: large;
-}
 
-.box-container p {
-    font-weight: 100;
-}
-
-.box-container img {
+.inner>img{
     width: 200px;
     height: 200px;
-    left: 25%;
-    position: relative;
-
+    margin-left: 50px;
+    margin-top: 20px;  
+    margin-bottom: 25px;
+}    
+.outer{
+    width: 300px;
+    height: 550px;
+    border:2px solid black ;
+    border-radius: 50px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px; 
+    margin-left: 18%;
+    display: inline-block;
+    background-color: rgb(190, 190, 190);
 }
-.box-container h2,p{
-    position: relative;
-    left: 25%;
+.outer:hover{
+    background-color: rgb(68, 68, 68);
+    transition: ease 0.7s;
+    color: white;
 }
-
-.box-container a:hover{
-    background-color: black;
-    color: white;  
-}
-.hide{
-    transition: 0.7s ease;
-    display: none;
-}
-.rate{
-    display: flex;
-    flex: wrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    left: 25%;
-    border-radius: 1px solid black;
-    background-color: rgb(199, 199, 199);
-}
-
-.box-container a{
+.price>a{
+    margin-left: 28%;
     color: black;
-    text-decoration: none;
-    border: 1.5px solid transparent;
-    border-radius: 7px;
-    transition: 0.7s ease;
 }
-.box-container:hover+ .hide{
-    display: block;
-    color : black;
+.price>a:hover{
+    color: white;
+    transition: ease 0.5s;
 }
-.box-container h2:hover + .hide{
-    
-    background-color: black;
-    border-radius: 7px;
-    display:block;
-    color: pink;
-    
-}
-.hide{
-    width: 150px;
-    position: absolute;
-    text-transform: inherit;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .social{
     background-color: rgb(238, 238, 238);
     width: 100%;
@@ -211,21 +175,13 @@ ul li.active a{
     transition: background-color 1.6s ease;
   }
   
-  
-  /*.active, .dot1:hover {
-    background-color: #717171;
-  }*/
-  
-  
   p {font-style: italic;}
   
   
   .author {color: rgb(164, 190, 238);}
 
-
   @media only screen and (max-width:400px){
-    
-    .main{
+      .main{
           max-width: 400px;
       }
     header{
@@ -238,15 +194,7 @@ ul li.active a{
         width: 150px;
         margin-left: 30%;
     }
-    .links{
-        border: 1px solid beige;
-
-    }
-    ul li.active a{
-        background-color: beige;
-        color: black;
-    }
-   ul{
+    ul{
         float: left;
         display: flex;
         flex-direction: column;
@@ -272,43 +220,9 @@ ul li.active a{
         background-color: black;
         color: white;
     }
-    .row{
-        display: block;
-        left:22.5%;
-        width: 30%;
-        
-    }
-    .rate{
-        padding: 0%;
-    }
-    .box-container h2{
-        left: 45%;
-        font-size: 20px;   
-    }
-    .box-container{
-        padding-top: 50px;
-    }
-    .box-container a{
-        border-bottom: 1px solid black;
-        color: rgb(105, 105, 105);
-        background-color: rgb(209, 212, 191);
-    }
-    .hide{
-        display: flex;
-        position: relative;
-        color: black;
-        border: 10px solid rgb(199, 199, 134);
-        left: 35%;
-        text-transform: uppercase;
-    }
-    .hide:hover{
-        background-color: rgb(136, 140, 113);
-    }
-  }
 
-
-  @media only screen and (max-width:768px){
-    
+}  
+@media only screen and (max-width:768px){
     .main{
         max-width: 400px;
     }
@@ -322,20 +236,14 @@ ul li.active a{
       width: 150px;
       margin-left: 30%;
   }
-  .links{
-        border: 1px solid beige;
-        
-    }
-  ul li.active a{
-    background-color: beige;
-    color: black;
-}
+  
+  
   ul{
         float: left;
         display: flex;
         flex-direction: column;
         padding: 10px; 
-        margin-left: 20%;
+        margin-left: 35%;
     }
   ul li{ 
       padding: 10px;
@@ -349,34 +257,5 @@ ul li.active a{
       font-size: 8px;
       background-color: black;
       color: white;
-  }
-  .row{
-      display: block;
-      left:22.5%;
-      width: 30%;
-      
-  }
-  .box-container h2{
-      left: 50%;
-      font-size: 20px;   
-  }
-  .box-container{
-      padding-top: 50px;
-  }
-  .box-container a{
-      border-bottom: 1px solid black;
-      color: rgb(105, 105, 105);
-      background-color: rgb(209, 212, 191);
-  }
-  .hide{
-      display: flex;
-      position: relative;
-      color: black;
-      border: 10px solid rgb(199, 199, 134);
-      left: 35%;
-      text-transform: uppercase;
-  }
-  .hide:hover{
-      background-color: rgb(136, 140, 113);
   }
 }

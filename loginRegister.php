@@ -1,4 +1,3 @@
-<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,14 +22,13 @@
             </div>     
             <div class="login-page">
                 <div class="form" action="loginRegister.php" methot="post">
-                <?php include('errors.php'); ?>
                     <form class="register-form">
                         <h2 style="font-family: Arial, Helvetica, sans-serif; color: grey;">Insert your info!</h2>
                         <input name="email" id="emaili" type="text" placeholder="email " required>
-                        <input  name="username" id="usernami" type="text" placeholder="user name" required>
+                        <input  name="user_name" id="usernami" type="text" placeholder="user name" required>
                         <input id="passwordi" type="password" name="password_1" placeholder="password" required>
                         <input id="confirm-pass" name="password_2" type="password" placeholder="Confirm password" required>
-                        <button name="register" >Submit</button>
+                        <button name="register" onclick="validation()">Submit</button>
                         <p class="message">Already registered? <a href="login.php">Login</a></p>
                     </form>
                 </div>
