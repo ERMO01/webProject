@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(h2.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top:25px ;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1.5px solid transparent;
+    transition: 0.9s ease;
+}
+ul li a:hover{
+    background-color: black;
+    color: white; 
+}
+ul li.active a{
+    background-color: black;
+    color: white;
+}
+.logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.ctg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: wheat;
+    font-family: sans-serif;
+}
+
+.inner>img{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 20px;  
+    margin-bottom: 25px;
+}    
+.outer{
+    width: 300px;
+    height: 550px;
+    border:2px solid black ;
+    border-radius: 50px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px; 
+    margin-left: 18%;
+    display: inline-block;
+    background-color: rgb(190, 190, 190);
+}
+.outer:hover{
+    background-color: rgb(68, 68, 68);
+    transition: ease 0.7s;
+    color: white;
+}
+.price>a{
+    margin-left: 28%;
+    color: black;
+}
+.price>a:hover{
+    color: white;
+    transition: ease 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.social img{
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.social img:hover{
+    transform: scale(1.1);
+}
+.slideshow-container {
+    color: rgb(104, 42, 52);
+    position: relative;
+    background: rgb(235, 229, 229);
+  }
+  
+  
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    
+  }
+  
+  
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover, .next:hover {
+    background-color:black;
+    color: white;
+  }
+  
+  
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1.6s ease;
+  }
+  
+  p {font-style: italic;}
+  
+  
+  .author {color: rgb(164, 190, 238);}
+
+  @media only screen and (max-width:400px){
+      .main{
+          max-width: 400px;
+      }
+    header{
+        width: 100%;
+        height: 50vh;
+        background-size:cover;
+        background-position: center;
+    }
+    .logo>img{
+        width: 150px;
+        margin-left: 30%;
+    }
+    ul{
+        float: left;
+        display: flex;
+        flex-direction: column;
+        padding: 10px; 
+    }
+    ul li{ 
+        padding: 10px;
+        font-size: 15px;
+        color: white;
+        margin-left: 0%;
+    }
+    ul li a:hover{
+        background-color: black;
+        color: white; 
+    }
+    ul li.active a{
+        background-color: black;
+        color: white;
+    }
+    .ctg{
+        top:45%;
+        font-size: 8px;
+        background-color: black;
+        color: white;
+    }
+
+}  
+@media only screen and (max-width:768px){
+    .main{
+        max-width: 400px;
+    }
+  header{
+      width: 100%;
+      height: 50vh;
+      background-size:cover;
+      background-position: center;
+  }
+  .logo>img{
+      width: 150px;
+      margin-left: 30%;
+  }
+  
+  
+  ul{
+        float: left;
+        display: flex;
+        flex-direction: column;
+        padding: 10px; 
+        margin-left: 35%;
+    }
+  ul li{ 
+      padding: 10px;
+      font-size: 15px;
+  }
+  ul li a{
+      color: white;
+  }
+  .ctg{
+      top:45%;
+      font-size: 8px;
+      background-color: black;
+      color: white;
+  }
+}
