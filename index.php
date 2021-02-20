@@ -13,12 +13,14 @@
                 <div class="logo">
                     <img src="logo.png">
                 </div>
-                <ul>
+                <div >
+                <ul class="links" >
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="linket/contact/contact.php">Contact</a></li>
-                    <li><a href="linket/loginRegister/loginRegister.php">Login/Register</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="loginRegister.php">Login/Register</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>
+            </div>
             <div class="ctg">
                 <h2>Parfumes as weird as you are :)</h2>
             </div>
@@ -27,24 +29,31 @@
         <div class="dp1" >
         <div class="row">
             <div  class='box-container' id="cologne1" >
+                <a href="#" class='rate'>Rate this product</a>
                 <img  src="product1/parfume2.png" alt="dior">
                 <h2>Dior Sauvage</h2>
                 <div class="hide">Spray on a bit of Dior Sauvage by Christian Dior before heading out for the night to enjoy the masculine combination of spicy bergamot, peppery patchouli and a cedar dry down that mingles with your natural essence</div>
-                <h2><a href="linket/buyProduct/buyProduct.html"> Buy for:170€ </a></h2>
+                <h2><a href="buyProduct.html"> Buy for:170€ </a></h2>
 
             </div>
             <div class='box-container' id="cologne2">
+                
 
+            <a href="#" class='rate'>Rate this product</a>
                 <img  src="product1/parfume1.png" alt="versace">
+
                 <h2>Versace Eros </h2>
                 <div class="hide">You'd expect nothing less than a manly fragrance from the design house of Versace, and you'll get it with Versace Eros, a decadent fragrance for men of distinction. </div>
-                <h2><a href="linket/buyProduct/buyProduct.html">Buy for:100€</a></h2>
+                <h2><a href="buyProduct.html">Buy for:100€</a></h2>
             </div>
             <div class='box-container' id="cologne3">
+
+            <a href="#" class='rate'>Rate this product</a>
                 <img  src="product1/parfume3.png" alt="burberry">
+
                 <h2>Burberry Touch</h2>
                 <div class="hide">This perfume features top and mid notes that are predominantly fruity and floral. The aromas of citrus and rose give Burberry Touch a soft, feminine scent, while the stronger base notes of cedar, vanilla, and oakmoss add a subtle warmth.</div>
-                <h2><a href="linket/buyProduct/buyProduct.html"> Buy for:80€ </a></h2>
+                <h2><a href="buyProduct.html"> Buy for:80€ </a></h2>
             </div>
         </div>
         </div>
@@ -52,25 +61,32 @@
         <div class="dp2">
         <div class="row">
             <div class='box-container' id="cologne4">
-                <!--<h2>ADD REVIEW</h2>-->
+
+            <a href="#" class='rate'>Rate this product</a>
                 <img src="product1/parfume4.png" alt="invictus">
+
                 <h2>Invictus</h2>
                 <div class="hide">Invictus. Incarnation of a man in all his power. Absolute hero. Blessed by the gods and ready to take on any challenge. Invictus men fragrance embodies the victory. A phenomenal shock between sharp freshness and animal sensuality.</div>
-                <h2><a href="linket/buyProduct/buyProduct.html">Buy for:80€ </a></h2>
+                <h2><a href="buyProduct.html">Buy for:80€ </a></h2>
                 
             </div>
             <div class='box-container' id="cologne5">
-                
-                <img  src="product1/parfume5.png" alt="1million">
+
+            <a href="#" class='rate'>Rate this product</a>
+                <img  src="product1/parfumee5.png" alt="1million">
+
                 <h2>1Million</h2>
                 <div class="hide">1 Million. The scent of insolence. A seductive wake, irresistible. There is never too much gold for 1 Million. A bad boy who views life as BIG. Otherwise, what's the point? Does not obey anyone except his fantasies. Golden rule. And he gets what he wants. In a snap.</div>
-                <h2><a href="linket/buyProduct/buyProduct.html">Buy for:75€</a></h2>
+                <h2><a href="buyProduct.html">Buy for:75€</a></h2>
             </div>
             <div class='box-container' id="cologne6">
+
+                <a href="#" class='rate'>Rate this product</a>
                 <img  src="product1/parfume6.png" alt="D%G">
+
                 <h2>D%G Light Blue</h2>
                 <div class="hide">D & G Light Blue by Dolce & Gabbana is a fragrance made for the casual woman. Introduced in 2001, this perfume features a subtle scent that will bring you the attention you desire. Its mix of apple, rose, jasmine and musk fragrances gives it a unique scent that is perfect for your events.</div>
-                <h2><a href="linket/buyProduct/buyProduct.html">Buy for:60€</a></h2>
+                <h2><a href="buyProduct.html">Buy for:60€</a></h2>
             </div>
         </div>
         </div>
@@ -110,6 +126,16 @@
             <a href="#"><img src="iglogo.png" alt="facbook"></a> 
             </div>    
             </div>
+            <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+             x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+            }
+            </script>
         <script src="main.js"></script>
     </body>
 </html>

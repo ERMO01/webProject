@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url(bcg.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top:25px ;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1.5px solid transparent;
+    transition: 0.9s ease;
+}
+ul li a:hover{
+    background-color: black;
+    color: white; 
+}
+ul li.active a{
+    background-color: black;
+    color: white;
+}
+.logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.login-page{
+    width: 460px;
+    padding: 10%;
+    margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: white ;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+}
+.form input {
+    font-family: "Roboto",sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100% ;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.form button, textarea{
+    font-family: "roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: lightslategrey ;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+.form button:hover, .form button:active{
+    background: grey;
+}
+.form textarea{
+    background: rgb(220, 221, 223) ;
+    color: black;
+    height: 149px;
+    resize:none;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .logo img{
+        padding-left: 33%;
+    }
+    .login-page{
+        padding-top: 40%;
+        padding-right: 30%;
+    }
+    ul {
+        list-style-type: none;
+        margin-top: 25px;
+        padding-right: 38%;
+    }
+}
+@media only screen and (max-width: 501px){
+    .login-page{
+        padding-top: 250px;
+    }
+    ul {
+        padding-top: 55px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        float: left;
+        margin-left: 29%;
+    }
+}

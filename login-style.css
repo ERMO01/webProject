@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-image: url(bcg.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top:25px ;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1.5px solid transparent;
+    transition: 0.9s ease;
+}
+ul li a:hover{
+    background-color: black;
+    color: white; 
+}
+ul li.active a{
+    background-color: black;
+    color: white;
+}
+.logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.login-page{
+    width: 460px;
+    padding: 10%;
+    margin: auto;
+}
+.logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: white ;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+}
+.form input {
+    font-family: "Roboto",sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100% ;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.form button{
+    font-family: "roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: lightslategrey ;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+.form button:hover, .form button:active{
+    background: grey;
+}
+@media only screen and (max-width: 768px){
+    ul {
+        display: flex;
+    }
+    .login-page{
+        padding-top: 15%;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .logo img{
+        padding-left: 45%;
+    }
+    ul{
+        float: left;
+        margin-left: 38%;
+    }
+    .login-page{
+        padding-top: 50%;
+    }
+    
+}
