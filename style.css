@@ -4,7 +4,7 @@
     font-family:Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(h2.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(newPic.jpeg);
     height: 100vh;
     background-size:cover;
     background-position: center;
@@ -20,29 +20,34 @@ ul li{
 ul li a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 5px 20px;
     border: 1.5px solid transparent;
+    border-radius: 20px;
     transition: 0.9s ease;
 }
 ul li a:hover{
+    border: 1px solid rgb(255, 255, 255);
     background-color: black;
-    color: white; 
 }
 ul li.active a{
-    background-color: black;
-    color: white;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
 }
 .logo img{
     float: left;
     width: 200px;
     height: auto;
+    background-color: rgb(43, 43, 43);
+    border-radius: 40px;
 }
 .main{
     max-width: 1200px;
     margin: auto;
 }
 .ctg{
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,14 +55,16 @@ ul li.active a{
     color: wheat;
     font-family: sans-serif;
 }
-
+.products{
+background-color:black; border:2px solid black" 
+}
 .inner>img{
     width: 200px;
     height: 200px;
     margin-left: 50px;
     margin-top: 20px;  
     margin-bottom: 25px;
-}    
+} 
 .outer{
     width: 300px;
     height: 550px;
@@ -65,39 +72,23 @@ ul li.active a{
     border-radius: 50px 20px;
     margin-top: 20px;
     margin-bottom: 15px; 
-    margin-left: 18%;
+    margin-left: 11.3%;
     display: inline-block;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 .outer:hover{
-    background-color: rgb(68, 68, 68);
+    border: 2px solid white;
     transition: ease 0.7s;
-    color: white;
 }
 .price>a{
     margin-left: 28%;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .price>a:hover{
-    color: white;
+    color: rgb(0, 214, 0);
     transition: ease 0.5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .social{
     background-color: rgb(238, 238, 238);
     width: 100%;
@@ -106,7 +97,6 @@ ul li.active a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 .social img{
     align-items: center;
@@ -117,9 +107,10 @@ ul li.active a{
     transform: scale(1.1);
 }
 .slideshow-container {
-    color: rgb(104, 42, 52);
+    border: 3px solid white;
+    color: rgb(255, 255, 255);
     position: relative;
-    background: rgb(235, 229, 229);
+    background: rgb(0, 0, 0);
   }
   
   
@@ -137,7 +128,7 @@ ul li.active a{
     width: auto;
     margin-top: -30px;
     padding: 16px;
-    color: #888;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -153,15 +144,16 @@ ul li.active a{
   
   
   .prev:hover, .next:hover {
-    background-color:black;
-    color: white;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   
   
   .dot-container {
+      border: 3px solid white;
       text-align: center;
       padding: 20px;
-      background: #ddd;
+      background: rgb(0, 0, 0);
   }
   
   .dot {
@@ -169,18 +161,68 @@ ul li.active a{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 1.6s ease;
+    transition: background-color 0.6s ease;
   }
-  
+  .dot:hover{
+      background-color: rgb(0, 214, 0);
+  }
   p {font-style: italic;}
   
   
-  .author {color: rgb(164, 190, 238);}
+  .author {color: rgb(0, 214, 0);}
 
-  @media only screen and (max-width:400px){
+  
+@media only screen and (max-width:768px){
+    .main{
+        max-width: 400px;
+    }
+    
+    header{
+      width: 100%;
+      height: 50vh;
+      background-size:cover;
+      background-position: center;
+    }
+    .logo>img{
+      width: 150px;
+      margin-left: 30%;
+    }
+  
+  
+  ul{
+        float: left;
+        display: flex;
+        flex-direction: column;
+        padding: 10px; 
+        margin-left: 35%;
+    }
+  ul li{ 
+      padding: 10px;
+      font-size: 15px;
+  }
+  ul li a{
+      color: white;
+  }
+  .ctg{
+      top:45%;
+      font-size: 8px;
+      background-color: black;
+      color: white;
+  }
+  .outer{
+    margin-left: 50px;
+}
+}
+
+@media only screen and (max-width:655px){
+    .outer{
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width:400px){
       .main{
           max-width: 400px;
       }
@@ -190,6 +232,7 @@ ul li.active a{
         background-size:cover;
         background-position: center;
     }
+    
     .logo>img{
         width: 150px;
         margin-left: 30%;
@@ -220,42 +263,7 @@ ul li.active a{
         background-color: black;
         color: white;
     }
-
+    .outer{
+        margin: 1px;
+    }
 }  
-@media only screen and (max-width:768px){
-    .main{
-        max-width: 400px;
-    }
-  header{
-      width: 100%;
-      height: 50vh;
-      background-size:cover;
-      background-position: center;
-  }
-  .logo>img{
-      width: 150px;
-      margin-left: 30%;
-  }
-  
-  
-  ul{
-        float: left;
-        display: flex;
-        flex-direction: column;
-        padding: 10px; 
-        margin-left: 35%;
-    }
-  ul li{ 
-      padding: 10px;
-      font-size: 15px;
-  }
-  ul li a{
-      color: white;
-  }
-  .ctg{
-      top:45%;
-      font-size: 8px;
-      background-color: black;
-      color: white;
-  }
-}

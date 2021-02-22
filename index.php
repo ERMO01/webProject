@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,23 +23,22 @@
             </div>
             </div>
         </header>
-        <div class="products" style=" background-color:grey; border:2px solid black" >
+        <div class="products">
         <div class="outer">
             <div class="inner">
-                <img src="product1/parfume1.png" alt="product">
-                
+                <img src="product1/parfume2.png" alt="product">              
             </div>
             <h1>Dior Sauvage</h1>
                 <div >Spray on a bit of Dior Sauvage by Christian Dior before heading out for the night to enjoy the masculine combination of spicy bergamot, peppery patchouli and a cedar dry down that mingles with your natural essence</div>
-                <h2 class="price"><a href="buyProduct.html"> Buy for:170€ </a></h2>
+                <h2 class="price"><a href="buyProduct.php"> Buy for:170€ </a></h2>
         </div>
         <div class="outer">
             <div class="inner">
-                <img src="product1/parfume2.png" alt="product">
+                <img src="product1/parfume1.png" alt="product">
             </div>
-            <h1>Lorem ipsum </h1>
-                <div >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi odio alias est itaque rem nisi necessitatibus quaerat facilis. Officiis fugiat nemo accusamus, suscipit minima voluptatibus ut iure illum nesciunt magnam.</div>
-                <h2 class="price"><a href="buyProduct.html"> Buy for:100€ </a></h2>
+            <h1>Versace eros</h1>
+                <div >Versace Eros is a fragrance for a strong, passionate man, who is master of himself. Eros interprets the sublime masculine through a luminous aura with an intense, vibrant, and glowing combination of fresh mint leaves.</div>
+                <h2 class="price"><a href="buyProduct.php"> Buy for:100€ </a></h2>
             </div>
             <div class="outer">
             <div class="inner">
@@ -47,7 +46,7 @@
             </div>
             <h1>Burberry Touch</h1>
                 <div >This perfume features top and mid notes that are predominantly fruity and floral. The aromas of citrus and rose give Burberry Touch a soft, feminine scent, while the stronger base notes of cedar, vanilla, and oakmoss add a subtle warmth.</div>
-                <h2 class="price"><a href="buyProduct.html"> Buy for:80€ </a></h2>
+                <h2 class="price"><a href="buyProduct.php"> Buy for:80€ </a></h2>
         </div>
         <div class="outer">
             <div class="inner">
@@ -55,7 +54,7 @@
             </div>
             <h1>Invictus</h1>
                 <div >Invictus. Incarnation of a man in all his power. Absolute hero. Blessed by the gods and ready to take on any challenge. Invictus men fragrance embodies the victory. A phenomenal shock between sharp freshness and animal sensuality.</div>
-                <h2 class="price"><a href="buyProduct.html">Buy for:80€ </a></h2>
+                <h2 class="price"><a href="buyProduct.php">Buy for:80€ </a></h2>
         </div>
         <div class="outer">
             <div class="inner">
@@ -63,7 +62,7 @@
             </div>
             <h1>1Million</h1>
                 <div >1 Million. The scent of insolence. A seductive wake, irresistible. There is never too much gold for 1 Million. A bad boy who views life as BIG. Otherwise, what's the point? Does not obey anyone except his fantasies. Golden rule. And he gets what he wants. In a snap.</div>
-                <h2 class="price"><a href="buyProduct.html">Buy for:75€</a></h2>
+                <h2 class="price"><a href="buyProduct.php">Buy for:75€</a></h2>
         </div>
         <div class="outer">
             <div class="inner">
@@ -71,25 +70,10 @@
             </div>
             <h1>D%G Light Blue</h1>
                 <div >D & G Light Blue by Dolce & Gabbana is a fragrance made for the casual woman. Introduced in 2001, this perfume features a subtle scent that will bring you the attention you desire. Its mix of apple, rose, jasmine and musk fragrances gives it a unique scent.</div>
-                <h2 class="price"><a href="buyProduct.html">Buy for:60€</a></h2>
+                <h2 class="price"><a href="buyProduct.php">Buy for:60€</a></h2>
         </div>
+        </div>   
         </div>
-        
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div>
         <div class="slideshow-container">
 
