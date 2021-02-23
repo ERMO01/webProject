@@ -15,7 +15,7 @@
                 <ul>
                     <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li><a href="loginRegister.php">Login/Register</a></li>
+                    <li><a href="loginRegistration.php">Login/Register</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>
             <div class="ctg">
