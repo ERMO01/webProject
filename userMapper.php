@@ -67,21 +67,7 @@ class UserMapper extends DatabasePDOConfiguration
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
-
-
-    function get ($name) {
-        $this->stmt = $this->pdo->prepare(
-          "SELECT `prodPic` FROM `product` WHERE `prodPic`=?"
-        );
-        $this->stmt->execute([$name]);
-        $img = $this->stmt->fetch();
-        return $img['img_data'];
-      }
-    public function show ($name) {
-        $img = base64_encode($this->get($name));
-        $ext = pathinfo($name, PATHINFO_EXTENSION);
-        
-      }
+    
     public function getAllProducts()
     {
         $this->query = "select * from product";

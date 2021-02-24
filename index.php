@@ -3,6 +3,8 @@ session_start();
 include_once 'userMapper.php';
 $mapper=new UserMapper();
 $productList=$mapper->getAllProducts();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,10 +54,8 @@ $productList=$mapper->getAllProducts();
                 foreach($productList as $product){ 
                 ?>  
                 <div class="outer">        
-                <div class="inner">
-                <?php
-                echo $product['prodPic'];      
-                ?>
+                <div class="inner" style="width:200px; height:200px;"> 
+                <?php echo $product['prodPic'];?> 
             </div>
                  <h1>
                      <?php echo $product['prodName'];?>

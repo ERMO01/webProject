@@ -25,7 +25,8 @@ if (isset($_SESSION["role"]) && $_SESSION['role'] == '1') {
   <div class="header">
     <img id="myLogo" class="logo" src="logo.png" alt="logo" />
     <ul class="headerList">
-          <li class="active"><a href="contact.php"> Contact</a></li>    
+          <li clas="active"><a href="#.php"> Dashboard</a></li>
+          <li ><a href="contact.php"> Contact</a></li>    
           <li> <a href="aboutUs.php">About Us</a></li>
           <li><a href="index.php">Home</a></li>
       <?php
