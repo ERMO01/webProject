@@ -1,3 +1,16 @@
+<?php 
+
+if(isset($_POST['submit'])){
+    $db= mysqli_connect("localhost","root","","webproject");
+
+    $usEmail=$_POST['email'];
+    $text = $_POST['text']; 
+
+    $sql = "INSERT INTO contact (userEmail , userMessage) VALUES ('$usEmail','$text')";
+    mysqli_query($db, $sql);
+    }
+
+?>
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -12,7 +25,8 @@
             <div class="logo">
                 <img src="logo.png">
                 
-            </div><div class="links">
+            </div>
+            <div class="links">
                     <ul>
                         <li class="active"><a > Contact</a></li>    
                         <li> <a href="loginRegistration.php">Register</a></li>
@@ -21,18 +35,15 @@
                     </ul>
                 </div> 
         </div> 
-                <form class="contact-page ">
-                    <div class="form" >
+            <form method="post" action="contact.php" class="contact-page ">
+                <div class="form" >
 
-                            <h2 style=color: white;">Insert your info!</h2>
-                            <input id="emaili" type="text" placeholder="EMAIL" required >
-                            <h1 id="results"></h1>
-                            <textarea id="textarea" name="text" class="formcontrol" placeholder="message" row="4" required ></textarea>
-                            
-                            <button onclick="validation()">Submit</button>
-                            </div> 
-                        </form>
-                </div>
+                <h2 style=color: white;>Insert your info!</h2>
+                <input name="email" id="emaili" type="text" placeholder="EMAIL" required >
+                <textarea name="text" cols="30" rows="4" placeholder="message"></textarea>
+                <button name="submit" onclick="validation()">Submit</button>
+                </div> 
+            </form>
     </header>
 
     </body>

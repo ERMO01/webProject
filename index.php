@@ -1,5 +1,8 @@
 <?php
 session_start();
+include_once 'userMapper.php';
+$mapper=new UserMapper();
+$productList=$mapper->getAllProducts();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +23,7 @@ session_start();
                     <?php
                     if (isset($_SESSION["role"]) && $_SESSION['role'] == '1') {
                      ?>
-
-                     <a href="adminDashboard.php">
-                      <li>Dashboard</li>
-                     </a>
+                      <li><a href="adminDashboard.php">Dashboard</a></li>
                      <?php
                       }
                      ?>
@@ -34,20 +34,46 @@ session_start();
                     <?php
                         if (isset($_SESSION["role"])) {
                         ?>
-                        <a href="logout.php">
-                        <li>Logout</li>
-                        </a>
+                        <li><a href="logout.php">Logout</a></li>    
                         <?php
                         }
                         ?>
                     </ul>
-                
+               
             <div class="ctg">
                 <h2>Perfumes as weird as you are :)</h2>
             </div>
             </div>
         </header>
-        <div class="products">
+        
+            <div class="products">
+                
+                <?php
+                foreach($productList as $product){ 
+                ?>  
+                <div class="outer">        
+                <div class="inner">
+                <?php
+                echo $product['prodPic'];      
+                ?>
+            </div>
+                 <h1>
+                     <?php echo $product['prodName'];?>
+                    </h1> 
+                 <div >
+                     <?php echo $product['prodDescription'];?> 
+                    </div>
+                 <h2 class="price">
+                     <a href="buyProduct.php">
+                          Buy FOR: <?php echo $product['prodPrice']; 
+                          ?>€ 
+                </a>
+                </h2>
+                </div>
+                 <?php 
+                 }
+                ?>
+
         <div class="outer">
             <div class="inner">
                 <img src="product1/parfume2.png" alt="product">              

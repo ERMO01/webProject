@@ -23,7 +23,7 @@
         <form class="form-login" action="register.php" method="post">
         <div class="form">
         <input type="text" name="username" value="" required placeholder="Username"></p>
-        <input type="text" name="password" value="" required placeholder="Password"></p>
+        <input type="password" name="password" value="" required placeholder="Password"></p>
         <a href="loginRegistration.php"><h3>Not a member? Register</h3></a>
         <input class="button" type="submit" name="login" value="Submit" placeholder="Submit"> 
         </form>

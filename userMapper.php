@@ -51,6 +51,45 @@ class UserMapper extends DatabasePDOConfiguration
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
+    public function getAllBuyers()
+    {
+        $this->query = "select * from buyproduct";
+        $statement = $this->conn->prepare($this->query);
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getAllContact()
+    {
+        $this->query = "select * from contact";
+        $statement = $this->conn->prepare($this->query);
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+
+    function get ($name) {
+        $this->stmt = $this->pdo->prepare(
+          "SELECT `prodPic` FROM `product` WHERE `prodPic`=?"
+        );
+        $this->stmt->execute([$name]);
+        $img = $this->stmt->fetch();
+        return $img['img_data'];
+      }
+    public function show ($name) {
+        $img = base64_encode($this->get($name));
+        $ext = pathinfo($name, PATHINFO_EXTENSION);
+        
+      }
+    public function getAllProducts()
+    {
+        $this->query = "select * from product";
+        $statement = $this->conn->prepare($this->query);
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
     public function getUserByRole($user){
         $this->query = "select role from users";
         $statement = $this->conn->prepare($this->query);
@@ -61,6 +100,13 @@ class UserMapper extends DatabasePDOConfiguration
     public function deleteUser($id)
     {
         $this->query = "delete from users where id=:id";
+        $statement = $this->conn->prepare($this->query);
+        $statement->bindParam(":id", $id);
+        $statement->execute();
+    }
+    public function deleteProduct($id)
+    {
+        $this->query = "delete from product where id=:id";
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":id", $id);
         $statement->execute();
