@@ -13,16 +13,13 @@
                 <img src="logo.png">
             </div>
                 <div class="links">
-                    <ul>
-                        <li class="active"> <a >Register</a></li>
-                        <li ><a href="contact.php"> Contact</a></li>      
-                        <li><a href="index.php">Home</a></li>
-                        
-                    </ul>
-                </div>
-            
+                <ul>
+                    <li class="active"> <a >Register</a></li>
+                    <li ><a href="contact.php"> Contact</a></li>      
+                    <li><a href="index.php">Home</a></li> 
+                </ul>
+            </div>
         </div>
-    
         <form class="form-register" action="register.php" method="post">
         <div class="form">
         <input id="usernami" type="text" name="username" value="" required placeholder="Username"></p>

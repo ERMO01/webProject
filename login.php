@@ -11,18 +11,17 @@
         <div class="main">
             <div class="logo">
                 <img src="logo.png">
+            </div>
                 <div class="links">
                     <ul>
                         <li class="active"> <a >Login</a></li>
                         <li ><a href="contact.php"> Contact</a></li>      
-                        <li><a href="index.php">Home</a></li>
-                        
+                        <li><a href="index.php">Home</a></li>      
                     </ul>
                 </div>
-            </div>
         </div>
-    <div class="regFrom">
-        <form class="form" action="register.php" method="post">
+        <form class="form-login" action="register.php" method="post">
+        <div class="form">
         <input type="text" name="username" value="" required placeholder="Username"></p>
         <input type="text" name="password" value="" required placeholder="Password"></p>
         <a href="loginRegistration.php"><h3>Not a member? Register</h3></a>

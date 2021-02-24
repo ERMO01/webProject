@@ -41,16 +41,15 @@ ul li.active a{
     background-color: rgb(112, 112, 112);
     border-radius: 40px;
 }
-.form{
-    margin-left: 33%;
-    padding-top: 45px;
-    background: transparent ;
-    
-    max-width: 360px;
+.form {
     padding: 45px;
     text-align: center;
     border: 2px solid white;
     border-radius: 29px;
+    width: 360px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 35%;
 }
 .form input {
     font-family: "Roboto",sans-serif;
@@ -62,10 +61,7 @@ ul li.active a{
     padding: 15px;
     font-size: 15px;
 }
-.regForm{
-    margin-top: 105px;
-    padding-top: 25%;
-}
+
 .button{
     font-family: "roboto",sans-serif;
     text-transform: uppercase;
@@ -83,17 +79,17 @@ ul li.active a{
 }
 @media only screen and (max-width:768px){
     .logo {
-        margin-left: 20%;
+        margin-left: 36.5%;
     }
     ul {
         position: absolute;
         margin-top: 100px;
-        margin-left: 15%;
+        margin-left: 30%;
     }
     .form {
         margin-top: 35%;
         position: absolute;
-        width: 500px;
+        width: 360px;
         margin-left: 20%;
     }
     
