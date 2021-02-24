@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(h2.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top:25px ;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    transition: 0.9s ease;
+}
+ul li a:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: black;
+}
+ul li.active a{
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+}
+.logo>img{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+table,th,td {
+    background-color: white;
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-right: auto;
+}
+.txt{
+    margin-right:auto;
+}

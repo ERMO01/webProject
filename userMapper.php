@@ -25,4 +25,44 @@ class UserMapper extends DatabasePDOConfiguration
         $statement->bindParam(":role", $role);
         $statement->execute();
     }
+    public function getUserByID($id)
+    {
+        $this->query = "select * from users where userid=:id";
+        $statement = $this->conn->prepare($this->query);
+        $statement->bindParam(":id", $id);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getUserByUsername($username)
+    {
+        $this->query = "select * from users where username=:username";
+        $statement = $this->conn->prepare($this->query);
+        $statement->bindParam(":username", $username);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getAllUsers()
+    {
+        $this->query = "select * from users";
+        $statement = $this->conn->prepare($this->query);
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getUserByRole($user){
+        $this->query = "select role from users";
+        $statement = $this->conn->prepare($this->query);
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function deleteUser($id)
+    {
+        $this->query = "delete from users where id=:id";
+        $statement = $this->conn->prepare($this->query);
+        $statement->bindParam(":id", $id);
+        $statement->execute();
+    }
 }

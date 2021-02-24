@@ -222,7 +222,7 @@ background-color:black; border:2px solid black"
         margin-left: 25%;
     }
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:415px){
       .main{
           max-width: 400px;
       }
@@ -264,6 +264,6 @@ background-color:black; border:2px solid black"
         color: white;
     }
     .outer{
-        margin: 1px;
+        margin: 12.5%;
     }
 }  

@@ -1,5 +1,5 @@
 <?php 
-include 'personClass.php';
+include_once 'personClass.php';
 
 class SimpleUser extends Person{
     protected $email;

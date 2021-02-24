@@ -38,23 +38,14 @@ ul li.active a{
     float: left;
     width: 200px;
     height: auto;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(112, 112, 112);
     border-radius: 40px;
 }
-.main{
-    max-width: 1200px;
-    margin: auto;
-}
-.contact-page{
-    width: 460px;
-    padding: 10%;
-    margin: auto;
-}
-.form{ 
-    position: relative;
-    z-index: 1;
+.form{
+    margin-left: 33%;
+    padding-top: 45px;
     background: transparent ;
-    color :white;
+    
     max-width: 360px;
     padding: 45px;
     text-align: center;
@@ -63,37 +54,33 @@ ul li.active a{
 }
 .form input {
     font-family: "Roboto",sans-serif;
-    outline: 1;
     background: transparent;
     width: 100% ;
+    color :rgb(255, 255, 255);
     border: 0;
     margin: 0 0 15px;
     padding: 15px;
-    box-sizing: border-box;
     font-size: 15px;
 }
-.form button, textarea{
+.regForm{
+    margin-top: 105px;
+    padding-top: 25%;
+}
+.button{
     font-family: "roboto",sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: transparent ;
     width: 100%;
     border: 0;
     padding: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    
 }
-.form button:hover, .form button:active{
-    background: white;
-    color: black;
+.button:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-.form textarea{
-    background: #1b1b1b;
-    color: black;
-    height: 149px;
-    resize:none;
-}
-
 @media only screen and (max-width:768px){
     .logo {
         margin-left: 20%;
@@ -105,6 +92,9 @@ ul li.active a{
     }
     .form {
         margin-top: 35%;
+        position: absolute;
+        width: 500px;
+        margin-left: 20%;
     }
     
 }
@@ -117,8 +107,9 @@ ul li.active a{
         margin-left: 10%;
     }
     .form {
-        width: 40%;
-        margin-top: 35%;
+        width: 70%;
+        margin-left: 3%;
+        margin-top: 50%;
     }
     
 }

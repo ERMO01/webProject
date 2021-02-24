@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,12 +15,33 @@
                 <div class="logo">
                     <img src="logo.png">
                 </div>
+                
                 <ul>
+                    <?php
+                    if (isset($_SESSION["role"]) && $_SESSION['role'] == '1') {
+                     ?>
+
+                     <a href="adminDashboard.php">
+                      <li>Dashboard</li>
+                     </a>
+                     <?php
+                      }
+                     ?>
                     <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="loginRegistration.php">Login/Register</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
+                    <li><a href="aboutUs.php">About Us</a></li>
+                    <?php
+                        if (isset($_SESSION["role"])) {
+                        ?>
+                        <a href="logout.php">
+                        <li>Logout</li>
+                        </a>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                
             <div class="ctg">
                 <h2>Perfumes as weird as you are :)</h2>
             </div>

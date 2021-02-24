@@ -3,7 +3,7 @@ function validation(){
     var pass=document.getElementById("passwordi").value;
     var usernami=document.getElementById("usernami").value;
     var reg=/^([A-Za-z0-9_\-\.])+@([A-Za-z0-9_\-\.])+([A-Za-z]{2,4})/;
-    var email=document.getElementById("emaili").value;
+    var email=document.getElementById("email").value;
     if(reg.test(emaili.value)==false){
         alert("Enter a valid Email")     
     }else if(usernami.length<4){

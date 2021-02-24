@@ -11,20 +11,21 @@
         <div class="main">
             <div class="logo">
                 <img src="logo.png">
-                <div class="links">
+                
+            </div><div class="links">
                     <ul>
                         <li class="active"><a > Contact</a></li>    
-                        <li> <a href="loginRegister.php">Register</a></li>
+                        <li> <a href="loginRegistration.php">Register</a></li>
                         <li><a href="index.php">Home</a></li>
                         
                     </ul>
-                </div>  
-                <form class="register-form ">
-                <div class="login-page">
+                </div> 
+        </div> 
+                <form class="contact-page ">
                     <div class="form" >
 
-                            <h2 style="font-family: Arial, Helvetica, sans-serif; color: grey;">Insert your info!</h2>
-                            <input id="emaili" type="text" placeholder="email" required >
+                            <h2 style=color: white;">Insert your info!</h2>
+                            <input id="emaili" type="text" placeholder="EMAIL" required >
                             <h1 id="results"></h1>
                             <textarea id="textarea" name="text" class="formcontrol" placeholder="message" row="4" required ></textarea>
                             
