@@ -3,8 +3,6 @@ session_start();
 include_once 'userMapper.php';
 $mapper=new UserMapper();
 $productList=$mapper->getAllProducts();
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +18,10 @@ $productList=$mapper->getAllProducts();
                 <div class="logo">
                     <img src="logo.png">
                 </div>
-                
+
                 <ul>
-                    <?php
-                    if (isset($_SESSION["role"]) && $_SESSION['role'] == '1') {
+                <?php
+                if (isset($_SESSION["role"]) && $_SESSION['role'] == '1') {
                      ?>
                       <li><a href="adminDashboard.php">Dashboard</a></li>
                      <?php
@@ -34,6 +32,7 @@ $productList=$mapper->getAllProducts();
                     <li><a href="loginRegistration.php">Login/Register</a></li>
                     <li><a href="aboutUs.php">About Us</a></li>
                     <?php
+                    
                         if (isset($_SESSION["role"])) {
                         ?>
                         <li><a href="logout.php">Logout</a></li>    
@@ -54,7 +53,7 @@ $productList=$mapper->getAllProducts();
                 foreach($productList as $product){ 
                 ?>  
                 <div class="outer">        
-                <div class="inner" style="width:200px; height:200px;"> 
+                <div class="inner" style="width:200px; height:200px;">        
                 <?php echo $product['prodPic'];?> 
             </div>
                  <h1>
